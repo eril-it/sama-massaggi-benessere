@@ -8,13 +8,23 @@ const escapeHtml = (value = "") =>
 
 const categoryById = id => SITE_DATA.categories.find(category => category.id === id);
 
+const CATEGORY_ICONS = {
+  relax: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 11 10 5 19 5c0 9-6 14-14 14Z"/><path d="M6 18 16 8"/></svg>`,
+  corpo: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3c2 3 2 5 0 8s-2 6 0 10"/><path d="M15 3c-2 3-2 5 0 8s2 6 0 10"/><path d="M9.5 11h5"/></svg>`,
+  sport: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9v6M4 10v4M17 9v6M20 10v4M7 12h10"/></svg>`,
+  viso: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4c-4 0-7 3-7 7v3c0 4 3 7 7 7"/><path d="M15 5c1 2 1 4 0 6l2 1-2 1"/><path d="M13 16c1 .8 2 .8 3 0"/></svg>`,
+  maternita: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="4.5" r="2"/><path d="M10 7c-1 3-1 6 0 9l-2 5"/><path d="M11 8c5 1 7 5 6 9-1 3-4 4-7 3"/><path d="M15 11c-2 1-3 3-3 5"/></svg>`
+};
+
+const categoryIcon = id => CATEGORY_ICONS[id] || "";
+
 function renderHomeCategories() {
   const container = document.querySelector("[data-home-categories]");
   if (!container) return;
 
   container.innerHTML = SITE_DATA.categories.map(category => `
     <a class="need-card${category.wideOnHome ? " need-card--wide" : ""}" href="trattamenti.html#${category.id}">
-      <span class="need-card__icon">${escapeHtml(category.icon)}</span>
+      <span class="need-card__icon">${categoryIcon(category.id)}</span>
       <strong>${escapeHtml(category.label)}</strong>
       <small>${escapeHtml(category.teaser)}</small>
     </a>
