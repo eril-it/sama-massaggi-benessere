@@ -132,9 +132,12 @@ const SITE_DATA = {
     },
     {
       id: "coppettazione-dinamica",
-      category: "sport",
+      categories: ["corpo", "sport"],
       name: "Coppettazione dinamica",
-      description: "Tecnica con coppette in movimento, utile anche nei percorsi dedicati a chi pratica attività fisica, per lavorare in modo dinamico sulle zone affaticate e favorire una sensazione di recupero e leggerezza.",
+      descriptions: {
+        corpo: "Trattamento eseguito con un sistema a vacuum controllato che mantiene un’aspirazione costante mentre il manipolo scorre sulle zone interessate. In ambito corpo e modellazione viene utilizzato per mobilizzare i tessuti, favorire la microcircolazione e sostenere il drenaggio, contribuendo a una sensazione di leggerezza e a un aspetto più uniforme dei tessuti.",
+        sport: "Trattamento con vacuum controllato applicato in modo dinamico alle aree muscolari. In ambito sportivo viene utilizzato prima o dopo l’attività fisica per stimolare localmente la circolazione e l’ossigenazione dei tessuti e per favorire una sensazione di recupero muscolare. Le evidenze disponibili supportano effetti sulla perfusione locale, mentre i benefici diretti sulla prestazione restano meno definiti."
+      },
       duration: "60 min",
       price: "65 €"
     },
