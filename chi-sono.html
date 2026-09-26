@@ -1,8 +1,89 @@
 <!doctype html>
 <html lang="it">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Chi sono · SAMA</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f1df">
+  <meta name="description" content="Chi è Giulia di SAMA Massaggi & Benessere">
+  <title>Chi sono · SAMA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header class="site-header"><a class="brand" href="index.html"><img src="assets/logo-sama.svg" alt="SAMA Massaggi e Benessere"></a><a href="index.html">Home</a></header>
-<main class="section"><p class="eyebrow">SAMA · MASSAGGI E BENESSERE</p><h1 style="color:var(--brown);font-size:48px">Chi sono</h1><p>Pagina in costruzione.</p></main>
-<nav class="sticky-contact"><a href="#" data-whatsapp>WhatsApp</a><a href="#" data-phone>Chiama</a></nav><script src="script.js"></script>
-</body></html>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="SAMA Massaggi e Benessere">
+      <img src="assets/logo-sama.svg" alt="SAMA Massaggi & Benessere">
+    </a>
+    <button class="menu-button" type="button" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Navigazione principale">
+    <a href="index.html">Home</a>
+    <a href="trattamenti.html">Trattamenti</a>
+    <a href="chi-sono.html">Chi sono</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+
+  <main class="about-page">
+    <section class="about-hero">
+      <div class="about-portrait-wrap">
+        <img class="about-portrait" src="data:image/jpeg;base64,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" alt="Giulia, SAMA Massaggi & Benessere">
+      </div>
+      <div class="about-hero__copy">
+        <p class="eyebrow">PIACERE, SONO GIULIA</p>
+        <h1>Il benessere comincia da un momento dedicato a te.</h1>
+        <p class="about-lead">Credo nell'ascolto, nella presenza e nel valore di fermarsi per ritrovare serenità, leggerezza e contatto con sé.</p>
+      </div>
+    </section>
+
+    <section class="about-story">
+      <div class="about-story__intro">
+        <p class="eyebrow">IL MIO APPROCCIO</p>
+        <h2>Umano, attento, in continua evoluzione.</h2>
+      </div>
+
+      <div class="about-story__text">
+        <p>Sono formata presso la <strong>scuola Evolution Academy</strong> e nel tempo ho seguito ulteriori corsi di approfondimento in altri percorsi formativi.</p>
+
+        <p>Il mio approccio è prima di tutto <strong>umano</strong>: ogni trattamento nasce dall'ascolto e dal desiderio di far stare bene la persona, creando uno spazio in cui possa sentirsi accolta, rallentare e dedicarsi davvero a sé.</p>
+
+        <p>Mi piace trasmettere <strong>serenità e positività</strong>, soprattutto quando la sensazione di benessere non si esaurisce nel momento del trattamento, ma continua ad accompagnare la persona anche nei giorni successivi.</p>
+
+        <p>Continuo ad aggiornarmi con <strong>nuove tecniche, trattamenti e ambiti di applicazione</strong>, perché voglio che SAMA resti un percorso vivo, attento e sempre più completo.</p>
+      </div>
+    </section>
+
+    <section class="about-values">
+      <article>
+        <span>01</span>
+        <h3>Ascolto</h3>
+        <p>Ogni persona è diversa e merita attenzione, tempo e un approccio su misura.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Serenità</h3>
+        <p>Il trattamento è anche un'occasione per fermarsi, respirare e alleggerire la routine.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Aggiornamento</h3>
+        <p>Nuove tecniche e nuovi percorsi formativi fanno parte del mio modo di lavorare.</p>
+      </article>
+    </section>
+
+    <section class="about-quote">
+      <p class="eyebrow">IL MIO OBIETTIVO</p>
+      <blockquote>“Offrire a ogni persona un momento di benessere tutto per sé, lontano dallo stress e dalla routine. Perché tutti se lo meritano.”</blockquote>
+      <a class="button button--primary" href="trattamenti.html">Scopri i trattamenti <span>→</span></a>
+    </section>
+  </main>
+
+  <nav class="sticky-contact" aria-label="Contatti rapidi">
+    <a href="#" data-whatsapp><span class="sticky-contact__label">WhatsApp</span><small>Scrivimi</small></a>
+    <a href="#" data-phone><span class="sticky-contact__label">Chiama</span><small>351 939 2394</small></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
