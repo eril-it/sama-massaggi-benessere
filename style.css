@@ -978,3 +978,25 @@ blockquote {
   letter-spacing: .08em;
   text-transform: uppercase;
 }
+
+
+.treatment-card__image--photo {
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.treatment-card__image--photo::before {
+  background: linear-gradient(to top, rgba(59,42,26,.18), rgba(59,42,26,0) 55%);
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 0;
+}
+
+.treatment-card__image--photo::after {
+  display: none;
+}
+
+.treatment-card__image--photo span {
+  text-shadow: 0 1px 10px rgba(59,42,26,.35);
+}
