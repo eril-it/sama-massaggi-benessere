@@ -76,7 +76,8 @@ const SITE_DATA = {
       duration: "60 min",
       price: "55 €",
       featured: true,
-      homeDescription: "Un momento di calma e benessere per tutto il corpo."
+      homeDescription: "Un momento di calma e benessere per tutto il corpo.",
+      image: "assets/relax-total-body.webp"
     },
     {
       id: "hot-stone",
