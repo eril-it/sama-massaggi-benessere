@@ -111,7 +111,8 @@ const SITE_DATA = {
       duration: "90 min",
       price: "75 €",
       featured: true,
-      homeDescription: "Per ritrovare leggerezza e benessere."
+      homeDescription: "Per ritrovare leggerezza e benessere.",
+      image: "assets/linfodrenante.webp"
     },
     {
       id: "modellante-legno",
@@ -129,7 +130,8 @@ const SITE_DATA = {
       duration: "30 min",
       price: "40 €",
       featured: true,
-      homeDescription: "Lavoro mirato sulle zone più tese e affaticate."
+      homeDescription: "Lavoro mirato sulle zone più tese e affaticate.",
+      image: "assets/decontratturante-schiena.webp"
     },
     {
       id: "coppettazione-dinamica",
@@ -159,6 +161,7 @@ const SITE_DATA = {
       price: "65 €",
       featured: true,
       homeDescription: "Benessere dedicato alla gravidanza e al post parto.",
+      image: "assets/maternita.webp",
       note: "In gravidanza: dalla 12ª settimana in poi."
     },
     {
@@ -169,7 +172,8 @@ const SITE_DATA = {
       duration: "60 min",
       price: "65 €",
       featured: true,
-      homeDescription: "Un rituale viso delicato, distensivo e luminoso."
+      homeDescription: "Un rituale viso delicato, distensivo e luminoso.",
+      image: "assets/kirei-kobido.webp"
     }
   ]
 };
