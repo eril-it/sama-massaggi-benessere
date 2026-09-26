@@ -35,39 +35,28 @@
     <section class="contact-grid">
       <article class="contact-card contact-card--phone">
         <p class="eyebrow">TELEFONO</p>
-        <h2>351 939 2394</h2>
+        <h2 data-phone-display></h2>
         <p>Per informazioni, disponibilità e prenotazioni.</p>
         <a class="button button--primary" href="#" data-phone>Chiama ora <span>→</span></a>
       </article>
 
-      <article class="contact-card">
-        <h2 class="contact-city">Pesaro</h2>
-        <p class="venue-name">presso Karma Fitness</p>
-        <p><strong>Via degli Abeti, 64</strong></p>
-        <a class="button button--secondary" href="https://www.google.com/maps/search/?api=1&query=Karma%20Fitness%20Via%20degli%20Abeti%2064%20Pesaro" target="_blank" rel="noopener">Apri in Maps <span>→</span></a>
-      </article>
-
-      <article class="contact-card">
-        <h2 class="contact-city">Riccione</h2>
-        <p class="venue-name">presso SET Movimento Terapia</p>
-        <p><strong>Via Diaz, 28</strong></p>
-        <a class="button button--secondary" href="https://www.google.com/maps/search/?api=1&query=Via%20Diaz%2028%20Riccione" target="_blank" rel="noopener">Apri in Maps <span>→</span></a>
-      </article>
+      <div data-location-list="contact" style="display:contents"></div>
     </section>
 
     <section class="treatment-cta">
       <p class="eyebrow">PRENOTAZIONI</p>
       <h2>Troviamo il momento giusto.</h2>
       <p>Se non sai quale trattamento scegliere, raccontami cosa stai cercando e ti aiuterò a orientarti tra le proposte SAMA.</p>
-      <a class="button button--primary" href="#" data-phone>Chiama il 351 939 2394 <span>→</span></a>
+      <a class="button button--primary" href="#" data-phone>Chiama il <span data-phone-display></span> <span>→</span></a>
     </section>
   </main>
 
   <nav class="sticky-contact" aria-label="Contatti rapidi">
     <a href="#" data-whatsapp><span class="sticky-contact__label">WhatsApp</span><small>Scrivimi</small></a>
-    <a href="#" data-phone><span class="sticky-contact__label">Chiama</span><small>351 939 2394</small></a>
+    <a href="#" data-phone><span class="sticky-contact__label">Chiama</span><small data-phone-display></small></a>
   </nav>
 
+  <script src="site-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
