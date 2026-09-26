@@ -28,7 +28,8 @@ function renderHomeTreatments() {
   const featured = SITE_DATA.treatments.filter(treatment => treatment.featured);
 
   container.innerHTML = featured.map((treatment, index) => {
-    const category = categoryById(treatment.category);
+    const primaryCategory = treatment.category || treatment.categories?.[0];
+    const category = categoryById(primaryCategory);
     const imageClass = ["one", "two", "three", "four", "one"][index % 5];
 
     return `
@@ -67,7 +68,9 @@ function renderTreatmentPage() {
   if (!groups) return;
 
   groups.innerHTML = SITE_DATA.categories.map(category => {
-    const treatments = SITE_DATA.treatments.filter(treatment => treatment.category === category.id);
+    const treatments = SITE_DATA.treatments.filter(treatment =>
+      treatment.category === category.id || treatment.categories?.includes(category.id)
+    );
 
     return `
       <section class="treatment-group" id="${category.id}">
@@ -80,7 +83,11 @@ function renderTreatmentPage() {
           <article class="service-card" id="${treatment.id}">
             <div>
               <h3>${escapeHtml(treatment.name)}</h3>
-              <p>${escapeHtml(treatment.description)}</p>
+              <p>${escapeHtml(
+                treatment.descriptions?.[category.id] ||
+                treatment.description ||
+                ""
+              )}</p>
               ${treatment.note ? `<p class="service-note">${escapeHtml(treatment.note)}</p>` : ""}
             </div>
             <div class="service-meta">
