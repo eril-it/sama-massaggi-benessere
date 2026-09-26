@@ -34,9 +34,7 @@ function renderHomeTreatments() {
 
     return `
       <a class="treatment-card" href="trattamenti.html#${treatment.id}">
-        <div class="treatment-card__image treatment-card__image--${imageClass}${treatment.image ? " treatment-card__image--photo" : ""}" ${treatment.image ? `style="background-image:url('${treatment.image}')"` : ""}>
-          <span>${String(index + 1).padStart(2, "0")}</span>
-        </div>
+        <div class="treatment-card__image treatment-card__image--${imageClass}${treatment.image ? " treatment-card__image--photo" : ""}" ${treatment.image ? `style="background-image:url('${treatment.image}')"` : ""}></div>
         <div class="treatment-card__body">
           <h3>${escapeHtml(treatment.name)}</h3>
           <p>${escapeHtml(treatment.homeDescription || treatment.description)}</p>
