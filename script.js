@@ -31,7 +31,7 @@ function renderHomeCategories() {
 
   container.innerHTML = SITE_DATA.categories.map(category => `
     <a class="need-card need-card--${category.id}${category.wideOnHome ? " need-card--wide" : ""}" href="trattamenti.html#${category.id}">
-      <span class="need-card__icon">${categoryIcon(category.id)}</span>
+      <span class="need-card__icon">${category.id === "viso" ? '<img src="assets/viso-rituali.png" alt="" aria-hidden="true">' : categoryIcon(category.id)}</span>
       <strong>${escapeHtml(category.label)}</strong>
       <small>${escapeHtml(category.teaser)}</small>
     </a>
