@@ -1,5 +1,5 @@
 const CONFIG = {
-  whatsappNumber: "",
+  whatsappNumber: "+393519392394",
   phoneNumber: "+393519392394"
 };
 
