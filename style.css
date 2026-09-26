@@ -1059,3 +1059,99 @@ blockquote {
     scroll-margin-top: 120px;
   }
 }
+
+
+/* Instagram, pacchetti e buoni regalo */
+.home-instagram {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.social-card,
+.treatment-extras {
+  padding: 28px 24px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.social-card h2,
+.treatment-extras h2 {
+  margin-bottom: 12px;
+  color: var(--brown);
+}
+
+.social-card > p:not(.eyebrow),
+.treatment-extras > p:not(.eyebrow) {
+  color: var(--brown-soft);
+  line-height: 1.6;
+}
+
+.social-card .button {
+  margin-top: 20px;
+}
+
+.button--instagram {
+  background: var(--brown);
+  color: var(--cream);
+}
+
+.instagram-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.instagram-label svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+
+.instagram-label .instagram-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.treatment-extras {
+  margin: 22px 18px 10px;
+  background:
+    linear-gradient(135deg, rgba(224,184,76,.15), transparent 55%),
+    var(--white);
+}
+
+.treatment-extras__actions {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.instagram-inline {
+  padding: 6px 2px;
+}
+
+.contact-card--instagram {
+  background:
+    linear-gradient(135deg, rgba(94,143,99,.11), transparent 55%),
+    var(--white);
+}
+
+@media (min-width: 760px) {
+  .social-card {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .treatment-extras {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .treatment-extras__actions {
+    grid-template-columns: minmax(240px, 360px) 1fr;
+    align-items: center;
+  }
+}
