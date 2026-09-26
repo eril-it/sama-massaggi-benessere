@@ -1,8 +1,66 @@
 <!doctype html>
 <html lang="it">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contatti · SAMA</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f1df">
+  <meta name="description" content="Contatti e sede di SAMA Massaggi & Benessere">
+  <title>Contatti · SAMA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header class="site-header"><a class="brand" href="index.html"><img src="assets/logo-sama.svg" alt="SAMA Massaggi e Benessere"></a><a href="index.html">Home</a></header>
-<main class="section"><p class="eyebrow">SAMA · MASSAGGI E BENESSERE</p><h1 style="color:var(--brown);font-size:48px">Contatti</h1><p>Pagina in costruzione.</p></main>
-<nav class="sticky-contact"><a href="#" data-whatsapp>WhatsApp</a><a href="#" data-phone>Chiama</a></nav><script src="script.js"></script>
-</body></html>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="SAMA Massaggi e Benessere">
+      <img src="assets/logo-sama.svg" alt="SAMA Massaggi & Benessere">
+    </a>
+    <button class="menu-button" type="button" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Navigazione principale">
+    <a href="index.html">Home</a>
+    <a href="trattamenti.html">Trattamenti</a>
+    <a href="chi-sono.html">Chi sono</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+
+  <main class="treatments-page">
+    <section class="page-hero">
+      <p class="eyebrow">SAMA · MASSAGGI & BENESSERE</p>
+      <h1>Contatti</h1>
+      <p>Per informazioni e prenotazioni puoi chiamarmi oppure contattarmi direttamente.</p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="contact-card">
+        <p class="eyebrow">TELEFONO</p>
+        <h2>351 939 2394</h2>
+        <p>Per informazioni, disponibilità e prenotazioni.</p>
+        <a class="button button--primary" href="#" data-phone>Chiama ora <span>→</span></a>
+      </article>
+
+      <article class="contact-card">
+        <p class="eyebrow">SEDE</p>
+        <h2>Montegridolfo</h2>
+        <p><strong>Via G.R. Norton 10F</strong><br>Montegridolfo (RN)</p>
+        <a class="button button--secondary" href="https://www.google.com/maps/search/?api=1&query=Via%20G.R.%20Norton%2010F%2C%20Montegridolfo%20RN" target="_blank" rel="noopener">Apri in Maps <span>→</span></a>
+      </article>
+    </section>
+
+    <section class="treatment-cta">
+      <p class="eyebrow">PRENOTAZIONI</p>
+      <h2>Troviamo il momento giusto.</h2>
+      <p>Se non sai quale trattamento scegliere, raccontami cosa stai cercando e ti aiuterò a orientarti tra le proposte SAMA.</p>
+      <a class="button button--primary" href="#" data-phone>Chiama il 351 939 2394 <span>→</span></a>
+    </section>
+  </main>
+
+  <nav class="sticky-contact" aria-label="Contatti rapidi">
+    <a href="#" data-whatsapp><span class="sticky-contact__label">WhatsApp</span><small>Scrivimi</small></a>
+    <a href="#" data-phone><span class="sticky-contact__label">Chiama</span><small>351 939 2394</small></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
