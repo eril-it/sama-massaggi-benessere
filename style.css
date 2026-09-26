@@ -112,16 +112,15 @@ body.menu-open .menu-button span:nth-child(3) { transform: translateY(-7px) rota
   align-items: flex-end;
   overflow: hidden;
   background:
-    radial-gradient(circle at 18% 26%, rgba(224,184,76,.28) 0 14%, transparent 15%),
-    radial-gradient(circle at 82% 22%, rgba(94,143,99,.24) 0 18%, transparent 19%),
-    linear-gradient(145deg, #efe4c7 0%, #d7e0c9 48%, #9eb392 100%);
+    linear-gradient(90deg, rgba(59,42,26,.60) 0%, rgba(59,42,26,.30) 44%, rgba(59,42,26,.08) 78%),
+    url("assets/hero-home.webp") center center / cover no-repeat;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(59,42,26,.42), transparent 48%);
+  background: linear-gradient(to top, rgba(59,42,26,.44), transparent 52%);
   pointer-events: none;
 }
 
@@ -1007,4 +1006,34 @@ blockquote {
 
 .treatment-card__image--photo span {
   text-shadow: 0 1px 10px rgba(59,42,26,.35);
+}
+
+
+/* Hero fotografico */
+.hero__decor { display: none; }
+
+@media (max-width: 759px) {
+  .hero {
+    background-position: 58% center;
+  }
+}
+
+/* Icone macro-categorie */
+.need-card__icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(94,143,99,.32);
+  border-radius: 50%;
+}
+
+.need-card__icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
