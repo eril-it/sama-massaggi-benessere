@@ -1189,3 +1189,55 @@ button:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 3px;
 }
+
+
+/* Correzioni mobile contatti e icona viso */
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.contact-grid,
+.contact-card,
+.contact-card > * {
+  min-width: 0;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact-card h2 {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.contact-card--instagram h2 {
+  font-size: clamp(24px, 7.2vw, 32px);
+  line-height: 1.08;
+}
+
+.contact-card .button {
+  width: 100%;
+  min-width: 0;
+}
+
+.need-card--viso .need-card__icon img {
+  width: 34px;
+  height: 34px;
+  max-width: none;
+}
+
+@media (max-width: 759px) {
+  .contact-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sticky-contact {
+    max-width: calc(100vw - 24px);
+  }
+}
