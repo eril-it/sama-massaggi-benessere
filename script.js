@@ -9,11 +9,11 @@ const escapeHtml = (value = "") =>
 const categoryById = id => SITE_DATA.categories.find(category => category.id === id);
 
 const CATEGORY_ICONS = {
-  relax: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 11 10 5 19 5c0 9-6 14-14 14Z"/><path d="M6 18 16 8"/></svg>`,
-  corpo: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3c2 3 2 5 0 8s-2 6 0 10"/><path d="M15 3c-2 3-2 5 0 8s2 6 0 10"/><path d="M9.5 11h5"/></svg>`,
-  sport: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9v6M4 10v4M17 9v6M20 10v4M7 12h10"/></svg>`,
-  viso: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4c-4 0-7 3-7 7v3c0 4 3 7 7 7"/><path d="M15 5c1 2 1 4 0 6l2 1-2 1"/><path d="M13 16c1 .8 2 .8 3 0"/></svg>`,
-  maternita: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="4.5" r="2"/><path d="M10 7c-1 3-1 6 0 9l-2 5"/><path d="M11 8c5 1 7 5 6 9-1 3-4 4-7 3"/><path d="M15 11c-2 1-3 3-3 5"/></svg>`
+  relax: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 3.2C14 3.5 8.5 6.1 6.2 10.4 4.4 13.8 5.1 17 5.1 17s3.2.7 6.6-1.1c4.3-2.3 6.9-7.8 7.2-14.6Z"/><path d="M4 20c2.2-4.5 5.3-7.6 10-10"/></svg>`,
+  corpo: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2"/><path d="M4 12c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2"/><path d="M4 16c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2"/></svg>`,
+  sport: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9v6M3.5 10.5v3M18 9v6M20.5 10.5v3M6 12h12"/></svg>`,
+  viso: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M9 10h.01M15 10h.01"/><path d="M9.5 14.5c1.6 1.3 3.4 1.3 5 0"/></svg>`,
+  maternita: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>`
 };
 
 const categoryIcon = id => CATEGORY_ICONS[id] || "";
@@ -23,7 +23,7 @@ function renderHomeCategories() {
   if (!container) return;
 
   container.innerHTML = SITE_DATA.categories.map(category => `
-    <a class="need-card${category.wideOnHome ? " need-card--wide" : ""}" href="trattamenti.html#${category.id}">
+    <a class="need-card need-card--${category.id}${category.wideOnHome ? " need-card--wide" : ""}" href="trattamenti.html#${category.id}">
       <span class="need-card__icon">${categoryIcon(category.id)}</span>
       <strong>${escapeHtml(category.label)}</strong>
       <small>${escapeHtml(category.teaser)}</small>
