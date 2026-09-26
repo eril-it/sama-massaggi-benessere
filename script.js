@@ -62,7 +62,7 @@ function renderHomeTreatments() {
       </a>
     `;
   }).join("") + `
-    <a class="treatment-card treatment-card--all" href="/trattamenti>
+    <a class="treatment-card treatment-card--all" href="/trattamenti">
       <div class="treatment-card__body treatment-card__body--all">
         <span class="treatment-card__all-mark">→</span>
         <h3>Vedi tutti i trattamenti</h3>
