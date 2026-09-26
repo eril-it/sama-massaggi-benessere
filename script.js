@@ -30,7 +30,7 @@ function renderHomeCategories() {
   if (!container) return;
 
   container.innerHTML = SITE_DATA.categories.map(category => `
-    <a class="need-card need-card--${category.id}${category.wideOnHome ? " need-card--wide" : ""}" href="trattamenti.html#${category.id}">
+    <a class="need-card need-card--${category.id}${category.wideOnHome ? " need-card--wide" : ""}" href="/trattamenti#${category.id}">
       <span class="need-card__icon">${category.id === "viso" ? '<img src="assets/viso-rituali-v2.png" alt="" aria-hidden="true">' : categoryIcon(category.id)}</span>
       <strong>${escapeHtml(category.label)}</strong>
       <small>${escapeHtml(category.teaser)}</small>
@@ -50,7 +50,7 @@ function renderHomeTreatments() {
     const imageClass = ["one", "two", "three", "four", "one"][index % 5];
 
     return `
-      <a class="treatment-card" href="trattamenti.html#${treatment.id}">
+      <a class="treatment-card" href="/trattamenti#${treatment.id}">
         <div class="treatment-card__image treatment-card__image--${imageClass}${treatment.image ? " treatment-card__image--photo" : ""}">
           ${treatment.image ? `<img src="${treatment.image}" alt="" loading="${index === 0 ? "eager" : "lazy"}" decoding="async">` : ""}
         </div>
@@ -62,7 +62,7 @@ function renderHomeTreatments() {
       </a>
     `;
   }).join("") + `
-    <a class="treatment-card treatment-card--all" href="trattamenti.html">
+    <a class="treatment-card treatment-card--all" href="/trattamenti>
       <div class="treatment-card__body treatment-card__body--all">
         <span class="treatment-card__all-mark">→</span>
         <h3>Vedi tutti i trattamenti</h3>
