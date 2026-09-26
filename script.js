@@ -12,7 +12,7 @@ const CATEGORY_ICONS = {
   relax: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 3.2C14 3.5 8.5 6.1 6.2 10.4 4.4 13.8 5.1 17 5.1 17s3.2.7 6.6-1.1c4.3-2.3 6.9-7.8 7.2-14.6Z"/><path d="M4 20c2.2-4.5 5.3-7.6 10-10"/></svg>`,
   corpo: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2"/><path d="M4 12c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2"/><path d="M4 16c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2"/></svg>`,
   sport: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9v6M3.5 10.5v3M18 9v6M20.5 10.5v3M6 12h12"/></svg>`,
-  viso: `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M9 10h.01M15 10h.01"/><path d="M9.5 14.5c1.6 1.3 3.4 1.3 5 0"/></svg>`,
+  viso: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 3.5c-4.8.2-8.5 3.8-8.5 8.7 0 4.6 3.1 8.3 7.5 8.3"/><path d="M15.2 5.5c1.1 1.7 1.4 3.3.8 5l1.6 1.3-1.8.9"/><path d="M13.6 15.8c.9.6 1.9.6 2.8 0"/></svg>`,
   maternita: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>`
 };
 
