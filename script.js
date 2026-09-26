@@ -1,6 +1,6 @@
 const CONFIG = {
   whatsappNumber: "",
-  phoneNumber: ""
+  phoneNumber: "+393519392394"
 };
 
 const whatsappLinks = document.querySelectorAll("[data-whatsapp]");
