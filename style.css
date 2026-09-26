@@ -700,3 +700,42 @@ blockquote {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+
+.location-list {
+  display: grid;
+  gap: 12px;
+}
+
+.location-city {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--sage);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.location-note {
+  margin: 12px 2px 0;
+  color: var(--brown-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contact-card--phone {
+  background:
+    linear-gradient(135deg, rgba(224,184,76,.14), transparent 55%),
+    var(--white);
+}
+
+@media (min-width: 760px) {
+  .location-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
