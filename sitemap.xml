@@ -3,25 +3,17 @@
   <url>
     <loc>https://sama-massaggi-benessere.eril.workers.dev/</loc>
     <lastmod>2026-09-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://sama-massaggi-benessere.eril.workers.dev/trattamenti.html</loc>
     <lastmod>2026-09-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://sama-massaggi-benessere.eril.workers.dev/chi-sono.html</loc>
     <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sama-massaggi-benessere.eril.workers.dev/contatti.html</loc>
     <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
