@@ -2,21 +2,180 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f1df">
+  <meta name="description" content="Trattamenti SAMA Massaggi & Benessere">
   <title>I miei trattamenti · SAMA</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/logo-sama.svg" alt="SAMA Massaggi e Benessere"></a>
-    <a href="index.html">Home</a>
+    <a class="brand" href="index.html" aria-label="SAMA Massaggi e Benessere">
+      <img src="assets/logo-sama.svg" alt="SAMA Massaggi & Benessere">
+    </a>
+    <button class="menu-button" type="button" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
-  <main class="section">
-    <p class="eyebrow">SAMA · MASSAGGI E BENESSERE</p>
-    <h1 style="color:var(--brown);font-size:48px">I miei trattamenti</h1>
-    <p>Qui raccoglieremo tutti i trattamenti, ciascuno con una descrizione breve e chiara.</p>
+
+  <nav class="mobile-menu" aria-label="Navigazione principale">
+    <a href="index.html">Home</a>
+    <a href="trattamenti.html">Trattamenti</a>
+    <a href="chi-sono.html">Chi sono</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+
+  <main class="treatments-page">
+    <section class="page-hero">
+      <p class="eyebrow">SAMA · MASSAGGI & BENESSERE</p>
+      <h1>I miei trattamenti</h1>
+      <p>Rituali e trattamenti dedicati al benessere del corpo, organizzati per aiutarti a trovare più facilmente ciò che cerchi.</p>
+    </section>
+
+    <nav class="category-chips" aria-label="Categorie trattamenti">
+      <a href="#relax">Relax</a>
+      <a href="#corpo">Corpo</a>
+      <a href="#sport">Tensioni & sport</a>
+      <a href="#maternita">Maternità</a>
+      <a href="#viso">Viso</a>
+    </nav>
+
+    <section class="treatment-group" id="relax">
+      <div class="treatment-group__heading">
+        <p class="eyebrow">RALLENTARE</p>
+        <h2>Relax & benessere</h2>
+      </div>
+
+      <article class="service-card">
+        <div>
+          <h3>Relax</h3>
+          <p>Un massaggio avvolgente pensato per concedersi una pausa, distendere il corpo e ritrovare una sensazione generale di calma e benessere.</p>
+        </div>
+        <div class="service-meta"><span>60 min</span><strong>55 €</strong></div>
+      </article>
+
+      <article class="service-card">
+        <div>
+          <h3>Hot Stone</h3>
+          <p>Un rituale rilassante che abbina manualità e pietre calde, per un’esperienza profonda, avvolgente e particolarmente piacevole nei momenti di stress.</p>
+        </div>
+        <div class="service-meta"><span>60 min</span><strong>65 €</strong></div>
+      </article>
+    </section>
+
+    <section class="treatment-group" id="corpo">
+      <div class="treatment-group__heading">
+        <p class="eyebrow">LEGGEREZZA & MODELLAZIONE</p>
+        <h2>Corpo & modellazione</h2>
+      </div>
+
+      <article class="service-card">
+        <div>
+          <h3>Anticellulite</h3>
+          <p>Trattamento manuale mirato alle zone interessate dagli inestetismi della cellulite, con manovre pensate per lavorare sui tessuti e sulla sensazione di compattezza.</p>
+        </div>
+        <div class="service-meta"><span>60 min</span><strong>55 €</strong></div>
+      </article>
+
+      <article class="service-card">
+        <div>
+          <h3>Rituale Fango Anticellulite / Drenante</h3>
+          <p>Un rituale corpo che combina applicazione del fango e trattamento manuale, dedicato a chi cerca una sensazione di leggerezza e una cura mirata degli inestetismi.</p>
+        </div>
+        <div class="service-meta"><span>70 min</span><strong>65 €</strong></div>
+      </article>
+
+      <article class="service-card">
+        <div>
+          <h3>Linfodrenante</h3>
+          <p>Manualità lente e delicate dedicate al drenaggio e alla sensazione di leggerezza, particolarmente indicate quando si percepiscono gonfiore e pesantezza.</p>
+        </div>
+        <div class="service-meta"><span>90 min</span><strong>75 €</strong></div>
+      </article>
+
+      <article class="service-card">
+        <div>
+          <h3>Coppettazione dinamica</h3>
+          <p>Tecnica eseguita con coppette in movimento sulla pelle, integrata nel trattamento corpo per lavorare in modo dinamico sui tessuti e sulle aree selezionate.</p>
+        </div>
+        <div class="service-meta"><span>60 min</span><strong>65 €</strong></div>
+      </article>
+
+      <article class="service-card">
+        <div>
+          <h3>Legnoterapia</h3>
+          <p>Trattamento corpo eseguito con strumenti in legno di forme differenti, utilizzati con manualità ritmiche e mirate sulle diverse zone.</p>
+        </div>
+        <div class="service-meta"><span>90 min</span><strong>70 €</strong></div>
+      </article>
+    </section>
+
+    <section class="treatment-group" id="sport">
+      <div class="treatment-group__heading">
+        <p class="eyebrow">MOVIMENTO</p>
+        <h2>Tensioni & sport</h2>
+      </div>
+
+      <article class="service-card">
+        <div>
+          <h3>Decontratturante schiena</h3>
+          <p>Trattamento concentrato sulla schiena, dedicato alle aree più tese e affaticate e pensato per chi desidera un lavoro localizzato e deciso.</p>
+        </div>
+        <div class="service-meta"><span>30 min</span><strong>40 €</strong></div>
+      </article>
+
+      <article class="service-card">
+        <div>
+          <h3>Applicazione KinesioTape</h3>
+          <p>Applicazione localizzata di tape elastico, proposta come servizio specifico in base alla zona e all’esigenza della persona.</p>
+        </div>
+        <div class="service-meta"><span>Applicazione</span><strong>10 €</strong></div>
+      </article>
+    </section>
+
+    <section class="treatment-group" id="maternita">
+      <div class="treatment-group__heading">
+        <p class="eyebrow">UN TEMPO DEDICATO</p>
+        <h2>Maternità</h2>
+      </div>
+
+      <article class="service-card">
+        <div>
+          <h3>Massaggio gravidanza</h3>
+          <p>Un trattamento pensato per accompagnare il periodo della gravidanza con manualità dolci e una posizione confortevole, adattate al momento e alle esigenze della futura mamma.</p>
+        </div>
+        <div class="service-meta"><span>60 min</span><strong>65 €</strong></div>
+      </article>
+    </section>
+
+    <section class="treatment-group" id="viso">
+      <div class="treatment-group__heading">
+        <p class="eyebrow">RITUALI VISO</p>
+        <h2>Viso & rituali</h2>
+      </div>
+
+      <article class="service-card">
+        <div>
+          <h3>Kirei Kobido</h3>
+          <p>Rituale manuale dedicato al viso, caratterizzato da gesti ritmici e precisi per regalare una sensazione di distensione, cura e luminosità.</p>
+        </div>
+        <div class="service-meta"><span>60 min</span><strong>65 €</strong></div>
+      </article>
+    </section>
+
+    <section class="treatment-cta">
+      <p class="eyebrow">NON SAI QUALE SCEGLIERE?</p>
+      <h2>Partiamo da come ti senti.</h2>
+      <p>Scrivimi su WhatsApp: possiamo capire insieme quale trattamento si avvicina di più a ciò che stai cercando.</p>
+      <a class="button button--primary" href="#" data-whatsapp>Scrivimi su WhatsApp <span>→</span></a>
+    </section>
   </main>
-  <nav class="sticky-contact"><a href="#" data-whatsapp>WhatsApp</a><a href="#" data-phone>Chiama</a></nav>
+
+  <nav class="sticky-contact" aria-label="Contatti rapidi">
+    <a href="#" data-whatsapp><span class="sticky-contact__label">WhatsApp</span><small>Scrivimi</small></a>
+    <a href="#" data-phone><span class="sticky-contact__label">Chiama</span><small>Parliamone</small></a>
+  </nav>
+
   <script src="script.js"></script>
 </body>
 </html>
