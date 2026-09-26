@@ -1092,8 +1092,9 @@ blockquote {
 }
 
 .button--instagram {
-  background: var(--brown);
-  color: var(--cream);
+  background: linear-gradient(135deg, #833ab4 0%, #c13584 30%, #e1306c 52%, #f56040 72%, #f77737 86%, #fcaf45 100%);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(193,53,132,.24);
 }
 
 .instagram-label {
@@ -1116,7 +1117,8 @@ blockquote {
 }
 
 .treatment-extras {
-  margin: 22px 18px 10px;
+  margin: 28px 18px 38px;
+  padding: 30px 24px;
   background:
     linear-gradient(135deg, rgba(224,184,76,.15), transparent 55%),
     var(--white);
@@ -1146,12 +1148,25 @@ blockquote {
 
   .treatment-extras {
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 34px auto 46px;
+    padding: 34px 30px;
   }
 
   .treatment-extras__actions {
     grid-template-columns: minmax(240px, 360px) 1fr;
     align-items: center;
+  }
+}
+
+
+/* Più respiro tra la sezione pacchetti e la CTA finale */
+.treatment-extras + .treatment-cta {
+  margin-top: 0;
+}
+
+@media (max-width: 759px) {
+  .treatment-extras {
+    margin-left: 18px;
+    margin-right: 18px;
   }
 }
