@@ -1047,3 +1047,15 @@ blockquote {
   object-fit: contain;
   display: block;
 }
+
+
+/* Offset delle singole card quando si apre un trattamento tramite #ancora */
+.service-card {
+  scroll-margin-top: 140px;
+}
+
+@media (max-width: 759px) {
+  .service-card {
+    scroll-margin-top: 120px;
+  }
+}
