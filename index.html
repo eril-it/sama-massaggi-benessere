@@ -2,78 +2,144 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SAMA Massaggi e Benessere">
-  <title>SAMA Massaggi e Benessere</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f1df">
+  <meta name="description" content="SAMA Massaggi & Benessere">
+  <title>SAMA Massaggi & Benessere</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="SAMA Massaggi e Benessere">
-      <img src="assets/logo-sama.svg" alt="SAMA Massaggi e Benessere">
+      <img src="assets/logo-sama.svg" alt="SAMA Massaggi & Benessere">
     </a>
-    <button class="menu-button" type="button" aria-label="Apri menu" aria-expanded="false">☰</button>
+    <button class="menu-button" type="button" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
+
+  <nav class="mobile-menu" aria-label="Navigazione principale">
+    <a href="index.html">Home</a>
+    <a href="trattamenti.html">Trattamenti</a>
+    <a href="chi-sono.html">Chi sono</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
 
   <main>
     <section class="hero">
+      <div class="hero__decor hero__decor--one"></div>
+      <div class="hero__decor hero__decor--two"></div>
       <div class="hero__content">
-        <p class="eyebrow">SAMA · MASSAGGI E BENESSERE</p>
-        <h1>Più equilibrio nella tua vita.</h1>
-        <p>Massaggi e trattamenti per ritrovare benessere, leggerezza e relax.</p>
+        <p class="eyebrow">SAMA · MASSAGGI & BENESSERE</p>
+        <h1>Più equilibrio<br>nella tua vita.</h1>
+        <p class="hero__lead">Massaggi e rituali pensati per ritrovare benessere, leggerezza e relax.</p>
         <div class="actions">
-          <a class="button button--primary" href="#" data-whatsapp>Scrivimi su WhatsApp</a>
-          <a class="button button--secondary" href="#" data-phone>Chiama ora</a>
+          <a class="button button--primary" href="#" data-whatsapp>Scrivimi su WhatsApp <span>→</span></a>
+          <a class="button button--secondary" href="#" data-phone>Chiama ora <span>→</span></a>
         </div>
       </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
     </section>
 
-    <section class="section">
+    <section class="section section--needs">
       <div class="section-heading">
         <div>
           <p class="eyebrow">PER TE</p>
           <h2>Di cosa hai bisogno oggi?</h2>
         </div>
       </div>
-      <div class="needs-grid">
-        <article class="need-card">Rilassamento profondo</article>
-        <article class="need-card">Più energia</article>
-        <article class="need-card">Meno stress</article>
-        <article class="need-card">Più leggerezza</article>
+      <div class="needs-row">
+        <article class="need-card">
+          <span class="need-card__icon">✦</span>
+          <strong>Rilassamento</strong>
+          <small>Stacca e respira</small>
+        </article>
+        <article class="need-card">
+          <span class="need-card__icon">↗</span>
+          <strong>Più energia</strong>
+          <small>Ritrova vitalità</small>
+        </article>
+        <article class="need-card">
+          <span class="need-card__icon">◌</span>
+          <strong>Meno stress</strong>
+          <small>Alleggerisci la mente</small>
+        </article>
+        <article class="need-card">
+          <span class="need-card__icon">≈</span>
+          <strong>Più leggerezza</strong>
+          <small>Per corpo e gambe</small>
+        </article>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--treatments">
       <div class="section-heading">
         <div>
           <p class="eyebrow">SCOPRI</p>
           <h2>I miei trattamenti</h2>
         </div>
-        <a href="trattamenti.html">Vedi tutti →</a>
+        <a class="text-link" href="trattamenti.html">Vedi tutti →</a>
       </div>
+
       <div class="treatment-carousel" aria-label="Anteprima trattamenti">
         <article class="treatment-card">
-          <div class="treatment-card__image placeholder"></div>
-          <h3>Decontratturante</h3>
-          <p>Per sciogliere tensioni e rigidità muscolari.</p>
+          <div class="treatment-card__image treatment-card__image--one"><span>01</span></div>
+          <div class="treatment-card__body">
+            <h3>Decontratturante</h3>
+            <p>Scioglie tensioni e rigidità muscolari.</p>
+          </div>
         </article>
         <article class="treatment-card">
-          <div class="treatment-card__image placeholder"></div>
-          <h3>Rilassante</h3>
-          <p>Per distendere corpo e mente.</p>
+          <div class="treatment-card__image treatment-card__image--two"><span>02</span></div>
+          <div class="treatment-card__body">
+            <h3>Rilassante</h3>
+            <p>Un momento di calma per corpo e mente.</p>
+          </div>
         </article>
         <article class="treatment-card">
-          <div class="treatment-card__image placeholder"></div>
-          <h3>Drenante</h3>
-          <p>Per ritrovare leggerezza e benessere.</p>
+          <div class="treatment-card__image treatment-card__image--three"><span>03</span></div>
+          <div class="treatment-card__body">
+            <h3>Drenante</h3>
+            <p>Per ritrovare leggerezza e benessere.</p>
+          </div>
         </article>
+        <article class="treatment-card">
+          <div class="treatment-card__image treatment-card__image--four"><span>04</span></div>
+          <div class="treatment-card__body">
+            <h3>Viso & benessere</h3>
+            <p>Un rituale delicato e rigenerante.</p>
+          </div>
+        </article>
+      </div>
+      <p class="swipe-hint">Scorri per vedere gli altri trattamenti <span>→</span></p>
+    </section>
+
+    <section class="section section--how">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SEMPLICE</p>
+          <h2>Come funziona</h2>
+        </div>
+      </div>
+      <div class="steps">
+        <article><span>1</span><h3>Scrivimi</h3><p>Raccontami cosa cerchi.</p></article>
+        <article><span>2</span><h3>Scegliamo</h3><p>Ti consiglio il trattamento.</p></article>
+        <article><span>3</span><h3>Prenota</h3><p>Troviamo giorno e orario.</p></article>
+      </div>
+    </section>
+
+    <section class="section section--trust">
+      <div class="trust-card">
+        <p class="eyebrow">UN MOMENTO TUTTO PER TE</p>
+        <blockquote>“Ogni trattamento parte dall'ascolto e viene adattato alla persona.”</blockquote>
+        <a class="button button--gold" href="chi-sono.html">Scopri chi sono →</a>
       </div>
     </section>
   </main>
 
   <nav class="sticky-contact" aria-label="Contatti rapidi">
-    <a href="#" data-whatsapp>WhatsApp</a>
-    <a href="#" data-phone>Chiama</a>
+    <a href="#" data-whatsapp><span class="sticky-contact__label">WhatsApp</span><small>Scrivimi</small></a>
+    <a href="#" data-phone><span class="sticky-contact__label">Chiama</span><small>Parliamone</small></a>
   </nav>
 
   <script src="script.js"></script>
