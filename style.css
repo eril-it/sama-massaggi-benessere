@@ -957,3 +957,24 @@ blockquote {
   background: var(--gold);
   color: var(--brown);
 }
+
+
+.service-note {
+  margin-top: 12px !important;
+  padding: 10px 12px;
+  border-left: 3px solid var(--gold);
+  background: rgba(224,184,76,.10);
+  color: var(--brown) !important;
+  font-size: 13px;
+  line-height: 1.45 !important;
+}
+
+.treatment-card__category {
+  display: block;
+  margin-top: 12px;
+  color: var(--sage);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
