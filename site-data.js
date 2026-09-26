@@ -54,7 +54,7 @@ const SITE_DATA = {
       chip: "Viso",
       eyebrow: "RITUALI VISO",
       icon: "◌",
-      teaser: "Kirei Kobido e cura del viso"
+      teaser: "Kirei Kobido e benessere del viso"
     },
     {
       id: "maternita",
@@ -138,8 +138,8 @@ const SITE_DATA = {
       categories: ["corpo", "sport"],
       name: "Coppettazione dinamica",
       descriptions: {
-        corpo: "Trattamento eseguito con un sistema a vacuum controllato che mantiene un’aspirazione costante mentre il manipolo scorre sulle zone interessate. In ambito corpo e modellazione viene utilizzato per mobilizzare i tessuti, favorire la microcircolazione e sostenere il drenaggio, contribuendo a una sensazione di leggerezza e a un aspetto più uniforme dei tessuti.",
-        sport: "Trattamento con vacuum controllato applicato in modo dinamico alle aree muscolari. In ambito sportivo viene utilizzato prima o dopo l’attività fisica per stimolare localmente la circolazione e l’ossigenazione dei tessuti e per favorire una sensazione di recupero muscolare."
+        corpo: "Trattamento eseguito con un sistema a vacuum controllato che mantiene un’aspirazione costante mentre il manipolo scorre sulle zone interessate. In ambito corpo e modellazione viene utilizzato per lavorare in modo dinamico sui tessuti, contribuendo a una sensazione di leggerezza e a un aspetto più uniforme.",
+        sport: "Trattamento con vacuum controllato applicato in modo dinamico alle aree muscolari. In ambito sportivo viene utilizzato prima o dopo l’attività fisica per lavorare localmente sui tessuti e favorire una sensazione di distensione e recupero muscolare."
       },
       duration: "60 min",
       price: "65 €"
@@ -156,7 +156,7 @@ const SITE_DATA = {
       id: "maternita-pre-post",
       category: "maternita",
       name: "Massaggio gravidanza & post parto",
-      description: "Un percorso pensato per accompagnare la donna prima e dopo la nascita. In gravidanza viene eseguito dalla 12ª settimana in poi, con manualità dolci e posizioni confortevoli adattate al momento. Nel post parto il lavoro può essere orientato alla sensazione di leggerezza, al drenaggio dei liquidi e al rimodellamento del corpo. È possibile costruire anche un percorso che unisca fase pre e post parto, per dedicarsi uno spazio di benessere in entrambi i momenti.",
+      description: "Un percorso pensato per accompagnare la donna prima e dopo la nascita. In gravidanza viene eseguito dalla 12ª settimana in poi, con manualità dolci e posizioni confortevoli adattate al momento. Nel post parto il lavoro può essere orientato alla sensazione di leggerezza e al rimodellamento del corpo. È possibile costruire anche un percorso che unisca fase pre e post parto, per dedicarsi uno spazio di benessere in entrambi i momenti.",
       duration: "60 min",
       price: "65 €",
       featured: true,
