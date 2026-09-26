@@ -51,7 +51,9 @@ function renderHomeTreatments() {
 
     return `
       <a class="treatment-card" href="trattamenti.html#${treatment.id}">
-        <div class="treatment-card__image treatment-card__image--${imageClass}${treatment.image ? " treatment-card__image--photo" : ""}" ${treatment.image ? `style="background-image:url('${treatment.image}')"` : ""}></div>
+        <div class="treatment-card__image treatment-card__image--${imageClass}${treatment.image ? " treatment-card__image--photo" : ""}">
+          ${treatment.image ? `<img src="${treatment.image}" alt="" loading="${index === 0 ? "eager" : "lazy"}" decoding="async">` : ""}
+        </div>
         <div class="treatment-card__body">
           <h3>${escapeHtml(treatment.name)}</h3>
           <p>${escapeHtml(treatment.homeDescription || treatment.description)}</p>
@@ -95,7 +97,7 @@ function renderTreatmentPage() {
         </div>
 
         ${treatments.map(treatment => `
-          <article class="service-card" id="${treatment.id}">
+          <article class="service-card" id="${treatment.categories?.length > 1 ? `${treatment.id}-${category.id}` : treatment.id}">
             <div>
               <h3>${escapeHtml(treatment.name)}</h3>
               <p>${escapeHtml(
@@ -169,15 +171,23 @@ function setupMenu() {
   const mobileMenu = document.querySelector(".mobile-menu");
   if (!menuButton || !mobileMenu) return;
 
+  const closeMenu = () => {
+    document.body.classList.remove("menu-open");
+    menuButton.setAttribute("aria-expanded", "false");
+  };
+
   menuButton.addEventListener("click", () => {
     const isOpen = document.body.classList.toggle("menu-open");
     menuButton.setAttribute("aria-expanded", String(isOpen));
   });
 
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeMenu();
+  });
+
   mobileMenu.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-      document.body.classList.remove("menu-open");
-      menuButton.setAttribute("aria-expanded", "false");
+      closeMenu();
     });
   });
 }
