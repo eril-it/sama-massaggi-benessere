@@ -1026,8 +1026,8 @@ blockquote {
 }
 
 .need-card__icon svg {
-  width: 21px;
-  height: 21px;
+  width: 24px;
+  height: 24px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.45;
@@ -1042,8 +1042,8 @@ blockquote {
 
 
 .need-card__icon img {
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
   display: block;
 }
