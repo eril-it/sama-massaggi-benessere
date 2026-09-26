@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" role="img" aria-labelledby="title">
+  <title id="title">SAMA Massaggi &amp; Benessere</title>
+  <g fill="none" stroke-linecap="round">
+    <path d="M260 25 C226 66 222 99 260 137 C298 99 294 66 260 25Z" fill="#e0b84c"/>
+    <path d="M225 62 C180 74 157 101 170 137 C206 132 231 111 239 78Z" fill="#5e8f63"/>
+    <path d="M295 62 C340 74 363 101 350 137 C314 132 289 111 281 78Z" fill="#5e8f63"/>
+    <path d="M196 104 C161 113 145 135 156 160 C187 156 207 142 218 119Z" fill="#e0b84c"/>
+    <path d="M324 104 C359 113 375 135 364 160 C333 156 313 142 302 119Z" fill="#e0b84c"/>
+    <path d="M137 77 C103 108 84 146 80 188" stroke="#e0b84c" stroke-width="4"/>
+    <path d="M383 77 C417 108 436 146 440 188" stroke="#e0b84c" stroke-width="4"/>
+  </g>
+  <text x="260" y="190" text-anchor="middle" font-size="72" font-family="Georgia, 'Times New Roman', serif" fill="#3b2a1a" letter-spacing="8">SAMA</text>
+  <text x="260" y="225" text-anchor="middle" font-size="23" font-family="Arial, sans-serif" fill="#6faf7a" letter-spacing="1.5">Massaggi &amp; Benessere</text>
+</svg>
