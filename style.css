@@ -821,8 +821,8 @@ blockquote {
   margin: 0 18px 48px;
   padding: 30px 24px;
   border-radius: var(--radius-lg);
-  background: var(--sage);
-  color: var(--white);
+  background: linear-gradient(135deg, rgba(224,184,76,.20), transparent 55%), var(--brown);
+  color: var(--cream);
 }
 
 .about-quote blockquote {
@@ -950,4 +950,10 @@ blockquote {
   font-weight: 700;
   letter-spacing: 0;
   text-transform: none;
+}
+
+
+.about-quote .button--primary {
+  background: var(--gold);
+  color: var(--brown);
 }
