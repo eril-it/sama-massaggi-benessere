@@ -97,7 +97,7 @@ function renderTreatmentPage() {
         </div>
 
         ${treatments.map(treatment => `
-          <article class="service-card" id="${treatment.categories?.length > 1 ? `${treatment.id}-${category.id}` : treatment.id}">
+          <article class="service-card" id="${treatment.categories?.length > 1 ? (category.id === treatment.categories[0] ? treatment.id : `${treatment.id}-${category.id}`) : treatment.id}">
             <div>
               <h3>${escapeHtml(treatment.name)}</h3>
               <p>${escapeHtml(
@@ -174,11 +174,13 @@ function setupMenu() {
   const closeMenu = () => {
     document.body.classList.remove("menu-open");
     menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Apri menu");
   };
 
   menuButton.addEventListener("click", () => {
     const isOpen = document.body.classList.toggle("menu-open");
     menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Chiudi menu" : "Apri menu");
   });
 
   document.addEventListener("keydown", event => {
