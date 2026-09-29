@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sama-massaggi-benessere.eril.workers.dev/sitemap.xml
-Sitemap: https://sama-massaggi-benessere.eril.workers.dev/sitemap.txt
+Sitemap: https://samamassaggi.it/sitemap.xml
+Sitemap: https://samamassaggi.it/sitemap.txt
