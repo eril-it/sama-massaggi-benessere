@@ -82,7 +82,7 @@ function renderTreatmentPage() {
       .join("");
   }
 
-  if (!groups) return;
+  if (!groups || groups.children.length > 0) return;
 
   groups.innerHTML = SITE_DATA.categories.map(category => {
     const treatments = SITE_DATA.treatments.filter(treatment =>
@@ -120,6 +120,7 @@ function renderTreatmentPage() {
 
 function renderLocations() {
   document.querySelectorAll("[data-location-list]").forEach(container => {
+    if (container.children.length > 0) return;
     const mode = container.dataset.locationList;
 
     if (mode === "contact") {
